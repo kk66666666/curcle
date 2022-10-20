@@ -28,20 +28,16 @@ function 上下 () {
         basic.pause(100)
     }
 }
-let b = 0
-let a = 0
 let y = 0
 let x = 0
 let change = 0
+let b = 0
+let a = 0
 let 次 = 0
 次 = 4
-change = 1
-左右()
-上下()
-change = -1
-左右()
-上下()
-次 = 2
+let n = 0
+a = 0
+b = 0
 change = 1
 左右()
 上下()
