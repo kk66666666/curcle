@@ -8,9 +8,21 @@ function 燈數 (num: number) {
     } else if (num >= 9 && num < 14) {
         x = 13 - num
         y = 4
-    } else if (num >= 14 && num <= 16) {
+    } else if (num >= 14 && num < 17) {
         x = 0
         y = 17 - num
+    } else if (num >= 17 && num < 19) {
+        x = num - 16
+        y = 1
+    } else if (num >= 19 && num < 21) {
+        x = 3
+        y = num - 18
+    } else if (num >= 21 && num < 24) {
+        x = 24 - num
+        y = 3
+    } else if (num >= 24) {
+        x = num - 23
+        y = 2
     }
     led.plot(x, y)
 }
@@ -28,22 +40,15 @@ function 上下 () {
         basic.pause(100)
     }
 }
-let y = 0
-let x = 0
 let change = 0
 let b = 0
 let a = 0
 let 次 = 0
-次 = 4
+let y = 0
+let x = 0
 let n = 0
-a = 0
-b = 0
-change = 1
-左右()
-上下()
-change = -1
-左右()
-上下()
 basic.forever(function () {
-	
+    n += 1
+    燈數(n)
+    basic.pause(100)
 })
