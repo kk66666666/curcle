@@ -40,13 +40,32 @@ function 上下 () {
         basic.pause(100)
     }
 }
+let y = 0
+let x = 0
 let change = 0
 let b = 0
 let a = 0
 let 次 = 0
-let y = 0
-let x = 0
+次 = 4
 let n = 0
+a = 0
+b = 0
+change = 1
+左右()
+上下()
+change = -1
+左右()
+上下()
+次 = 2
+a = 1
+b = 1
+change = 1
+左右()
+上下()
+change = -1
+左右()
+上下()
+led.plot(2, 2)
 basic.forever(function () {
     n += 1
     燈數(n)
