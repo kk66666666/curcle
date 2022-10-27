@@ -60,7 +60,7 @@ let x = 0
 let n = 0
 n = 0
 basic.forever(function () {
-    n += 1
     燈數(n)
+    n += -1
     basic.pause(50)
 })
